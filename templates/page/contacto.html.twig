@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><!--Bootstrap-->
+        <script type="text/javascript" src="js/script.js"></script>
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" >
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+        <title>Panaderia Marzá</title>
+</head>
+<body>
+
+    <!--Empieza header-->
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="imagenes/logo.jpg" alt="">
+    </a>
+    <nav class="navegacion" >
+        <a href="/">Inicio</a>
+        <a href="/">Nosotros</a>
+        <a href="/producto">Productos</a>
+        <a href="#contact">Contacto</a>
+        <a href="#recetas">Recetas</a>
+    </nav>
+   
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+</header>
+    <!--Acaba header-->
+    <!--Seccion contacto-->
+
+    <section class="contacto" id="contacto">
+
+        <h1 class="titulo">Pedidos <span>Online</span></h1>
+        <div class="direccion">
+        <form id="form">
+            <label>Nombre:</label>
+                <input type="text" id="1" name="nombre">
+            <label>Apellido:</label>
+                <input type="text" id="2" name="apellido" >
+            <label>Telefono:</label>
+                <input type="text" id="3" name="telefono" >
+            <label>DNI:</label>
+                <input type="text" id="4" name="dni" >
+            <label>¿Que desea?</label>
+            <select name="pedidos" id="pedidos">
+                    <option value="">--Selecciona el pedido--</option>
+                    <option value="madalena">Madalena</option>
+                    <option value="pan">Pan</option>
+                    <option value="coca de tomate">Coca de tomate</option>
+            </select><br>
+            <input type="button" name="realizar" id="realizar" value="Hacer Pedido" class="btn">
+            <input type="button" name="borrar" id="borrar" value="Restablecer Pedido" class="btn">
+        </form>
+    </div>
+    </section>
+
+    <!--fin seccion contacto-->
+     <!--Inicio footer-->
+
+     <section class="footer">
+
+        <div class="rrss">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="derechos">
+            Creado por Alejandro || <span>Todos los derechos reservados</span>
+        </div>
+        <div class="reloj"id="reloj">
+        </div>
+    </section>
+    <!--Fin footer-->
+</body>
+</html>
