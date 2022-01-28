@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+{% block title %}Productos{% endblock %}
+{% block body %}
+    <h1>Listado de Productos</h1>
+    {% if categoria.productos %}
+    <section class="productos" id="productos">
+        <h1 class="titulo"> Nuestros <span>Productos</span></h1>
+        {% for producto in categoria.productos %}
+        {{ include ('partials/datos_producto.html.twig' , {'producto': producto }) }}
+        {% endfor %}
+        </section>
+    {% else %}
+        <p> No se han encontrado productos</p>
+    {% endif %}
+{% endblock %}

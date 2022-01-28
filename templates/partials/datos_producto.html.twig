@@ -1,6 +1,12 @@
-            <div class="contenedor">
-                <div class="contiene">
-                    <img src="/{{ producto.foto }}" alt="">
-                    <h3>{{ producto.nombre}}</h3>
-                    <div class="precio">{{ producto.precio}}</div>
-            </div>
+<div class="container">
+                <div class="row-4">
+                    <div class="img">
+                         <img src="/{{producto.foto}}" alt="">
+                    </div>
+                        <div class="col">
+                        <h3>{{producto.nombre}}</h3>
+                        <div class="precio">{{producto.precio}}€</div>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </div>
+</div>

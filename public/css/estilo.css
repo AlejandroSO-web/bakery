@@ -1,6 +1,7 @@
 :root{
     --main-color: #d3ad7f;
     --bg: #010103;
+    --border: .1rem solid rgba(255,255,255,.3);
 }
 
 *{
@@ -175,56 +176,83 @@ section{
     text-transform: uppercase;
     color: white;
 }
-.inicio .contenido p{
+/* .inicio .contenido p{
     font-size: 20px;
     font-weight: lighter;
     line-height: 2.5;
     text-transform: uppercase;
     color: white;
-}
+} */
 
 /* productos.html */
+
+div.container::before{
+    content: none;
+}
+
+.productos .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap:1.5rem;
+}
 .productos .titulo{
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 30px;
-    position: relative;
     padding-top: 100px;
 }
 .productos .titulo span{
     color: #d3ad7f;
     text-transform: uppercase;
 }
-.productos .contenedor{
-    padding-top: 1rem;
-    box-sizing: border-box;
-}
 
-.productos .contenedor .contiene{
-    float: left;
-    width: 50%;
-    position: relative;
-    padding: 0 8px;
+.productos .container .row-4{
     text-align: center;
-    border: .1rem solid #d3ad7f;
+    border:var(--border);
+    padding: -0.5rem;
 }
-.productos .contenedor .contiene img{
-    height: 10rem;
-}
-.productos .contenedor .contiene h3{
 
-    color: #fff;
+.productos .container .row-4 .col a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 2rem;
     font-size: 1rem;
-    padding: 0.8rem 0;
-}
-
-.productos .contenedor .contiene .precio{
-
+    border: var(--border);
     color: #fff;
-    font-size: 0.8rem;
-    padding: .1.5rem 0;
+    margin: .3rem;
 }
+
+.productos .container .row-4 .col a:hover{
+    background: #d3ad7f;
+}
+
+.productos .container .row img{
+    padding: 2.5rem 0;
+}
+.productos .container .row-4 .img img{
+    height: 15.5rem;
+}
+
+.productos .container .row-4 .col h3{
+    color : #fff;
+    font-size: 1.5rem;
+}
+
+.productos .container .row-4 .col .precio{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.productos .container .row-4 .col .precio span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.productos .container .row-4 .col button{
+    border-radius: 4px;
+    color : black;
+    background-color: #d3ad7f;
+    width: 80px;
+    height: 60px;
+}
+
 /*contacto.html*/
 .contacto .direccion{
     display: flex;
@@ -287,7 +315,6 @@ select{
 .footer{
     background: black;
     text-align: center;
-    clear: both;
 }
 
 .footer .rrss{
