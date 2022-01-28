@@ -197,14 +197,15 @@ section{
     text-transform: uppercase;
 }
 .productos .contenedor{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
-    gap:1rem;
     padding-top: 1rem;
+    box-sizing: border-box;
 }
 
 .productos .contenedor .contiene{
-    padding: 5rem;
+    float: left;
+    width: 50%;
+    position: relative;
+    padding: 0 8px;
     text-align: center;
     border: .1rem solid #d3ad7f;
 }
@@ -286,6 +287,7 @@ select{
 .footer{
     background: black;
     text-align: center;
+    clear: both;
 }
 
 .footer .rrss{
