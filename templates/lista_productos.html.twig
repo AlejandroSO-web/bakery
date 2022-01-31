@@ -5,9 +5,12 @@
     {% if productos %}
     <section class="productos" id="productos">
     <h1 class="titulo"> Nuestros <span>Productos</span></h1>
+        <div class="container">
+         
         {% for producto in productos %}
         {{ include ('partials/datos_producto.html.twig' , {'producto': producto }) }}
-        {% endfor %}
+       {% endfor %}
+       </div>
     </section>
     {% else %}
         <p> No se han encontrado productos</p>

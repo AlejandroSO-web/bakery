@@ -21,13 +21,13 @@ class ProductoController extends AbstractController
     }
 
     /**
-     * @Route("/producto/buscar/{texto}", name="buscar_producto")
+     * @Route("/producto/buscar/{id}", name="buscar_producto")
      */
-    public function buscar(ManagerRegistry $doctrine, $texto): Response{
+    public function buscar(ManagerRegistry $doctrine, $id): Response{
 
         $repositorio = $doctrine->getRepository(Producto::class);
 
-        $productos = $repositorio->findAll($texto);
+        $productos = $repositorio->findBy(['categoria' => $id]);
 
         return $this->render("lista_productos.html.twig",[
                 'productos' => $productos
