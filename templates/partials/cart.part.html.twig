@@ -1,6 +1,9 @@
-<div class="row carro">
+{% extends "base.html.twig" %}
+{% block title %}Carrito de la compra {% endblock %}
+{% block body %}
+<div class="row carro" style="margin:200px">
 
-  <h2 class="subtitle" style="margin:0">Carrito de la compra</h2>
+  <h2 class="subtitle" >Carrito de la compra</h2>
 
   <table class="table">
 
@@ -38,7 +41,7 @@
 
       </tr>
 
-    </tbody
+    </tbody>
 
     <tfoot>
 
@@ -65,3 +68,5 @@
   </table>
 
 </div>
+
+{% endblock %}
