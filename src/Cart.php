@@ -1,27 +1,30 @@
 <?php
-namespace ProyectoWeb\core;
+namespace App;
+
+use Symfony\Component\HttpFoundation\RequestStack;
 
 class Cart
 {
-    /** 
-     * Sin parámetros. Sólo crea la variable de sesión
-    */
-    public function __construct() {
+    private $session;
+
+    /**
+     * Crea la variable de sesión cart
+     */
+    public function __construct(RequestStack $requestStack) {
+        $this->session = $requestStack->getSession();
         $this->create();
     }
     /**
-     * Crea el carrito si no lo está ya
+     * Crea el carrito
      */
     public function create(){
-        if (!isset($_SESSION['cart'])){
-            $_SESSION['cart'] = array();
-        }
+      $this->session->set('cart', []);
     }
     /**
      * @return array
      */
     public function getCart(): array {
-        return $_SESSION['cart'];
+        return  $this->session->get('cart');
     }
     
     /**
@@ -29,7 +32,9 @@ class Cart
     *	@id ID del producto a añadir / modificar
     */
     public function addItem($id, $cantidad) {
-        $_SESSION['cart'][$id] = $cantidad;
+      $c = $this->getCart();
+      $c[$id] = $cantidad;     
+      $this->session->set('cart', $c);
     }
 
     /**
@@ -38,7 +43,7 @@ class Cart
     *	@return true si el producto ya está en el carrito o false en caso contrario
     */
     public function itemExists($id) {
-        return isset($_SESSION['cart'][$id]);
+      return array_key_exists($id, $this->getCart());
     }
     /**
     *	Devuelve la cantidad comprada de un producto
@@ -48,7 +53,7 @@ class Cart
       if (!$this->itemExists($id))
         return 0;
       else
-        return $_SESSION['cart'][$id];
+        return $this->getCart()[$id];
     }
 
     /**
@@ -56,14 +61,15 @@ class Cart
     *	@id ID del producto a eliminar
     */
     public function deleteItem($id) {
-      unset($_SESSION['cart'][$id]);
+      $c = $this->getCart();
+      unset($c[$id]);
+      $this->session->set('cart', $c);
     }
 
     /**
     *	Elimina todos los items del carrito
     */
     public function empty() {
-      unset($_SESSION['cart']);
       $this->create();
     }
     
@@ -73,7 +79,7 @@ class Cart
      * @return boolean
      */
     public function isEmpty(): bool {
-       return ($this->howMany() == 0);
+       return ($this->howMany() === 0);
     }
   
     /**
@@ -81,6 +87,6 @@ class Cart
     * @return el número total de productos comprados o 0 si no hay ninguno
     */
     public function howMany(){
-      return array_sum($_SESSION['cart']);
+      return array_sum($this->session->get('cart'));
     }
 }

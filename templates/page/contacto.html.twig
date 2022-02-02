@@ -40,29 +40,73 @@
     <section class="contacto" id="contacto">
 
         <h1 class="titulo">Pedidos <span>Online</span></h1>
+        
         <div class="direccion">
-        <form id="form">
-            <label>Nombre:</label>
-                <input type="text" id="1" name="nombre">
-            <label>Apellido:</label>
-                <input type="text" id="2" name="apellido" >
-            <label>Telefono:</label>
-                <input type="text" id="3" name="telefono" >
-            <label>DNI:</label>
-                <input type="text" id="4" name="dni" >
-            <label>¿Que desea?</label>
-            <select name="pedidos" id="pedidos">
-                    <option value="">--Selecciona el pedido--</option>
-                    <option value="madalena">Madalena</option>
-                    <option value="pan">Pan</option>
-                    <option value="coca de tomate">Coca de tomate</option>
-            </select><br>
-            <input type="button" name="realizar" id="realizar" value="Hacer Pedido" class="btn">
-            <input type="button" name="borrar" id="borrar" value="Restablecer Pedido" class="btn">
-        </form>
+             <form  id="form">
+                <div class="row">
+                     <div class="col-25">
+                       <label for="fname">Nombre</label>
+                </div>
+                <div class="col-75">
+                     <input type="text" id="1" name="firstname" placeholder="">
+                 </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-25">
+            <label for="lname">Apellido</label>
+        </div>
+       <div class="col-75">
+        <input type="text" id="2" name="lastname" placeholder="">
+       </div>
     </div>
-    </section>
 
+    <div class="row">
+            <div class="col-25">
+            <label for="tlf">Telefono</label>
+        </div>
+       <div class="col-75">
+       <input type="text" id="3" name="telefono">
+       </div>
+    </div>
+
+    <div class="row">
+            <div class="col-25">
+            <label for="dni">DNI</label>
+        </div>
+       <div class="col-75">
+        <input type="text" id="4" name="dni" placeholder="">
+       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="producto">Producto</label>
+      </div>
+      <div class="col-75">
+        <select id="pedidos" name="pedidos">
+          <option value="">--Selecciona el pedido--</option>
+          <option value="madalena">Madalena</option>
+          <option value="coca tomate">Coca Tomate</option>
+          <option value="pan">Pan</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Observaciones:</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Escribe algo.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+     <button class="btn" name="realizar" id="realizar">Hacer Pedido</button>
+    </div>
+  </form>
+</div>
+</section>
+<p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.2384641275053!2d-0.043679684617302934!3d39.98077597941821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd600081fb1ebf67%3A0xb4345c34bd0a5d09!2sPanaderia%20Marz%C3%A1!5e0!3m2!1ses!2ses!4v1643789973272!5m2!1ses!2ses" width="820" height="300" allowfullscreen="" loading="lazy"></iframe></p>
     <!--fin seccion contacto-->
      <!--Inicio footer-->
 
