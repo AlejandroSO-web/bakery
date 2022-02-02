@@ -118,6 +118,14 @@ section{
     line-height: 1.8;
 
 }
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
 @media (max-width:991px) {
     html{
         font-size: medium;
@@ -176,13 +184,6 @@ section{
     text-transform: uppercase;
     color: white;
 }
-/* .inicio .contenido p{
-    font-size: 20px;
-    font-weight: lighter;
-    line-height: 2.5;
-    text-transform: uppercase;
-    color: white;
-} */
 
 /* productos.html */
 
@@ -254,30 +255,33 @@ div.container::before{
 }
 
 /*contacto.html*/
-.contacto .direccion{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    background: black;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+
+.direccion{
+    border-radius: 5px;
+    padding: 20px;
 }
 .contacto .titulo{
-    text-align: center;
     color: #fff;
     text-transform: uppercase;
     font-size: 30px;
-    position: relative;
     padding-top: 100px;
 }
 .contacto .titulo span{
     color: #d3ad7f;
     text-transform: uppercase;
 }
-.contacto .direccion form{
- flex:1 1 10rem;
-}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
 
 .contacto .direccion form label  {
     display: flex;
@@ -285,19 +289,19 @@ div.container::before{
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
     color: #d3ad7f;
+    width: 1000px;
 }
 
 .contacto .direccion form input  {
-    display: flex;
+    display: block;
     align-content: center;
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
     background:#fff ;
     color: #d3ad7f;
-    
 }
 .contacto .direccion form select{
-    display:flex;
+    display:block;
     align-content: center;
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
@@ -309,6 +313,25 @@ select{
     cursor: pointer;
 }
 
+.contacto .direccion form button{
+    display: inline-block;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
 
 /*footer*/
 
