@@ -21,9 +21,9 @@
         <img src="imagenes/logo.jpg" alt="">
     </a>
     <nav class="navegacion" >
-        <a href="#inicio">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="/producto">Productos</a>
+        <a href="{{ path ('inicio') }}">Inicio</a>
+        <a href="{{ path ('inicio') }}#nosotros">Nosotros</a>
+        <a href="{{ path ('producto') }}">Productos</a>
         <a href="/contacto">Contacto</a>
         <a href="recetas.html">Recetas</a>
     </nav>
@@ -31,6 +31,7 @@
     <div class="icons">
         <div class="fas fa-search" id="search-btn"></div>
         <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <a href="{{ path ('login') }}"><div class="glyphicon glyphicon-user"></div></a>
         <div class="fas fa-bars" id="menu-btn"></div>
     </div>
     

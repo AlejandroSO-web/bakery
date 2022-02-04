@@ -182,7 +182,15 @@ section{
 .inicio .contenido h3{
     font-size: 45px;
     text-transform: uppercase;
-    color: white;
+    color: #d3ad7f;
+    background-color: white;
+    margin-top: -90px;
+}
+.inicio .contenido p{
+    color: #d3ad7f;
+    background-color: white;
+    margin-top: -20px;
+    font-size: 20pt;
 }
 
 /* productos.html */
@@ -254,11 +262,27 @@ div.container::before{
     height: 60px;
 }
 
-/*contacto.html*/
+/*contacto.html,login.html.twig,register.html.twig*/
+
+
+.register h1 {
+    margin-top: 120px;
+    color: #d3ad7f;
+}
+
+.register form label{
+    display: flex;
+    align-content: center;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: #d3ad7f;
+    width: 1000px;
+}
 
 .direccion{
     border-radius: 5px;
     padding: 20px;
+    margin-top: 100px;
 }
 .contacto .titulo{
     color: #fff;
@@ -282,6 +306,15 @@ div.container::before{
     width: 75%;
     margin-top: 6px;
   }
+
+  .direccion form label  {
+    display: flex;
+    align-content: center;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: #d3ad7f;
+    width: 1000px;
+}
 
 .contacto .direccion form label  {
     display: flex;
@@ -323,6 +356,14 @@ input[type=text], select, textarea {
     border-radius: 4px;
     resize: vertical;
   }
+  input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
 .row:after {
     content: "";
     display: table;
