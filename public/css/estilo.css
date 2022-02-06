@@ -1,3 +1,4 @@
+/*Base.html.twig y media queries*/
 :root{
     --main-color: #d3ad7f;
     --bg: #010103;
@@ -192,7 +193,7 @@ section{
     margin-top: -20px;
     font-size: 20pt;
 }
-
+/*Fin base.html.twig*/
 /* productos.html */
 
 div.container::before{
@@ -261,7 +262,7 @@ div.container::before{
     width: 80px;
     height: 60px;
 }
-
+/*Fin productos.html.twig */
 /*contacto.html,login.html.twig,register.html.twig*/
 
 
@@ -374,7 +375,39 @@ input[type=text], select, textarea {
     display: inline-block;
   }
 
-/*footer*/
+/*Recetas.html.twig*/
+
+.recetas .contenido{
+    max-width: 800px;
+    padding-bottom: 600px;
+}
+
+.recetas .contenido h2{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #d3ad7f;
+    margin-top: 103px;
+}
+.recetas .contenido p{
+    color: #d3ad7f;
+    margin-top: -20px;
+    font-size: 20pt;
+}
+
+.video h4{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #d3ad7f;
+}
+.video video{
+    background: #d3ad7f;
+}
+
+.acordeon{
+    margin-top:-600px;
+}
+
+/*footer común*/
 
 .footer{
     background: black;
@@ -404,6 +437,7 @@ input[type=text], select, textarea {
     color:#d3ad7f;
 }
 
+/*CSS reloj*/
 .reloj{
     color: #fff;
     background: black;

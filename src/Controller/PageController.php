@@ -29,11 +29,21 @@ class PageController extends AbstractController
     }
 
      /**
-     * @Route("/contacto", name="contactos")
+     * @Route("/contacto", name="contacto")
      */
     public function contacto(): Response
     {
         return $this->render('page/contacto.html.twig', [
+            'controller_name' => 'PageController'
+        ]);
+    }
+
+     /**
+     * @Route("/recetas", name="recetas")
+     */
+    public function recetas(): Response
+    {
+        return $this->render('page/recetas.html.twig', [
             'controller_name' => 'PageController'
         ]);
     }

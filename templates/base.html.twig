@@ -5,9 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width , initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><!--Bootstrap-->
-        <script type="text/javascript" src="js/script.js"></script>
-        <link rel="stylesheet" href="/css/estilo.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" >
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/script.js"></script>
+        <script type="text/javascript" src="/js/code.js"></script>
+        <link rel="stylesheet" href="/css/estilo.css">
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
         <title>Panaderia Marzá</title>
@@ -24,8 +29,8 @@
         <a href="{{ path ('inicio') }}">Inicio</a>
         <a href="{{ path ('inicio') }}#nosotros">Nosotros</a>
         <a href="{{ path ('producto') }}">Productos</a>
-        <a href="/contacto">Contacto</a>
-        <a href="recetas.html">Recetas</a>
+        <a href="{{ path ('contacto') }}">Contacto</a>
+        <a href="{{ path ('recetas') }}">Recetas</a>
     </nav>
    
     <div class="icons">
@@ -51,6 +56,8 @@
 
         <div class="derechos">
             Creado por Alejandro || <span>Todos los derechos reservados</span>
+        </div>
+        <div class="reloj"id="reloj">
         </div>
     </section>
     <!--Fin footer-->

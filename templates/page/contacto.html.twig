@@ -1,40 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width , initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><!--Bootstrap-->
-        <script type="text/javascript" src="/js/script.js"></script>
-        <link rel="stylesheet" href="/css/estilo.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" >
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-        <title>Panaderia Marzá</title>
-</head>
-<body>
-
-    <!--Empieza header-->
-<header class="header">
-
-    <a href="#" class="logo">
-        <img src="imagenes/logo.jpg" alt="">
-    </a>
-    <nav class="navegacion" >
-        <a href="/">Inicio</a>
-        <a href="/">Nosotros</a>
-        <a href="/producto">Productos</a>
-        <a href="#contact">Contacto</a>
-        <a href="#recetas">Recetas</a>
-    </nav>
-   
-    <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
-</header>
-    <!--Acaba header-->
+{% extends "base.html.twig" %}
+{% block body %}
     <!--Seccion contacto-->
 
     <section class="contacto" id="contacto">
@@ -108,23 +73,6 @@
 </section>
 <p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.2384641275053!2d-0.043679684617302934!3d39.98077597941821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd600081fb1ebf67%3A0xb4345c34bd0a5d09!2sPanaderia%20Marz%C3%A1!5e0!3m2!1ses!2ses!4v1643789973272!5m2!1ses!2ses" width="820" height="300" allowfullscreen="" loading="lazy"></iframe></p>
     <!--fin seccion contacto-->
-     <!--Inicio footer-->
-
-     <section class="footer">
-
-        <div class="rrss">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-        </div>
-
-        <div class="derechos">
-            Creado por Alejandro || <span>Todos los derechos reservados</span>
-        </div>
-        <div class="reloj"id="reloj">
-        </div>
-    </section>
-    <!--Fin footer-->
 </body>
 </html>
+{% endblock %}
