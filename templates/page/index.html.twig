@@ -32,10 +32,19 @@
                 <p>
                     Te invitamos a probar esta rutina matinal
                 </p>
-                <a href="#" class="btn">Enseñame más</a>
+                <a href="{{ path ('producto') }}" class="btn">Enseñame más</a>
             </div>
         </div>
     </section>
 
+    <section class="ajax">
+    <div class="resultado">
+     <h3>Magía</h3>
+        <div id="contenido"> 
+        <img id="mix" src="imagenes/horno.jpg" width="300" height="300">
+        <input type="button" id="boton" class="btn" value="De aqui sale magía">
+        </div>
+    </div>
+    </section>
     <!-- Fin seccion historia -->
 {% endblock %}

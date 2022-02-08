@@ -3,7 +3,7 @@
 <!--Pagina recetas-->
     <section class="recetas" id="recetas">
 
-        <div class="contenido">
+        <div class="contenido" >
             <h2>Recetas</h2>
             <p>Eventos durante el año . . .</p>
         </div>
@@ -47,10 +47,11 @@
 </div>
 </section>
 
-
 <section class="video">
+<div class="row">
+  <div class="column" >
     <h4>¿VAS A SER EL ÚLTIMO EN PICAR?</h4>
-    <div class="video">
+     <div class="video">
         <video preload="none" controls width="540" height="480">
         <source src="video/pastel.mp4" type="video/mp4" />
         <source src="video/pastel.webm" type="video/webm" />
@@ -58,6 +59,15 @@
         Su navegador no soporta contenido multimedia.
         </video>
     </div>
+  </div>
+  <div class="column" >
+    <h4>Premios</h4>
+    <p>2 primeros premios a los mejores pan y rollo de anís en 2019 otorgados por la Asociación Provincial de Panadería y Pastelería de Castellón </p>
+    <img src="imagenes/ganador.png" id="copa"  alt="ganador" width="300" height="300">
+  </div>
+</div>
 </section>
+
+
     <!--Fin pagina recetas-->
 {% endblock %}

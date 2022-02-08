@@ -200,6 +200,17 @@ section{
     margin-top: -20px;
     font-size: 20pt;
 }
+
+.ajax .resultado{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #d3ad7f;
+}
+.ajax .resultado input{
+    border: 2px;
+    background-color: #d3ad7f;
+    color: white;
+}
 /*Fin base.html.twig*/
 /* productos.html */
 
@@ -290,7 +301,6 @@ div.container::before{
 .direccion{
     border-radius: 5px;
     padding: 20px;
-    margin-top: 100px;
 }
 .contacto .titulo{
     color: #fff;
@@ -414,6 +424,24 @@ input[type=text], select, textarea {
     margin-top:-600px;
 }
 
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+  }
+  .column p{
+      font-size: 20px;
+      color : white;
+      justify-content: center;
+  }
+  .row:after {
+    content: "";
+    display: table;
+  }
+
+
 /*footer común*/
 
 .footer{
@@ -423,6 +451,7 @@ input[type=text], select, textarea {
 
 .footer .rrss{
     padding: 1rem 0;
+    margin-top: 200px;
 }
 .footer .rrss a{
     height: 3rem;

@@ -19,55 +19,55 @@
         
         <div class="row">
             <div class="col-25">
-            <label for="lname">Apellido</label>
+                <label for="lname">Apellido</label>
+            </div>
+        <div class="col-75">
+           <input type="text" id="2" name="lastname" placeholder="">
         </div>
-       <div class="col-75">
-        <input type="text" id="2" name="lastname" placeholder="">
-       </div>
-    </div>
+        </div>
 
-    <div class="row">
+        <div class="row">
             <div class="col-25">
-            <label for="tlf">Telefono</label>
+              <label for="tlf">Telefono</label>
         </div>
-       <div class="col-75">
-       <input type="text" id="3" name="telefono">
-       </div>
-    </div>
+        <div class="col-75">
+          <input type="text" id="3" name="telefono">
+        </div>
+        </div>
 
-    <div class="row">
+        <div class="row">
             <div class="col-25">
-            <label for="dni">DNI</label>
+              <label for="dni">DNI</label>
+            </div>
+        <div class="col-75">
+          <input type="text" id="4" name="dni" placeholder="">
+       </div>
+       </div>
+
+       <div class="row">
+        <div class="col-25">
+          <label for="producto">Producto</label>
         </div>
        <div class="col-75">
-        <input type="text" id="4" name="dni" placeholder="">
-       </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="producto">Producto</label>
+          <select id="pedidos" name="pedidos">
+            <option value="">--Selecciona el pedido--</option>
+            <option value="madalena">Madalena</option>
+            <option value="coca tomate">Coca Tomate</option>
+            <option value="pan">Pan</option>
+          </select>
+        </div>
       </div>
-      <div class="col-75">
-        <select id="pedidos" name="pedidos">
-          <option value="">--Selecciona el pedido--</option>
-          <option value="madalena">Madalena</option>
-          <option value="coca tomate">Coca Tomate</option>
-          <option value="pan">Pan</option>
-        </select>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Observaciones:</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Escribe algo.." style="height:200px"></textarea>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="subject">Observaciones:</label>
+      <div class="row">
+        <button class="btn" name="realizar" id="realizar">Hacer Pedido</button>
       </div>
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Escribe algo.." style="height:200px"></textarea>
-      </div>
-    </div>
-    <div class="row">
-     <button class="btn" name="realizar" id="realizar">Hacer Pedido</button>
-    </div>
   </form>
 </div>
 </section>
