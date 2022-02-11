@@ -1,8 +1,8 @@
-window.onload = function(){
-    document.getElementById("realizar").onclick = validar;
-    setInterval(muestraReloj,1000); 
+window.onload= function(){
+    document.getElementById("#realizar").onclick = validar;
     document.getElementById("3").onkeypress = soloNumeros;
     document.getElementById("borrar").onclick = borrar;
+    setInterval(muestraReloj,1000); 
 }
 
 function validar(event){

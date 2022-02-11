@@ -1,9 +1,7 @@
-window.onload = function(){
+window.onload= function(){
     if (window.XMLHttpRequest) {
          XMLHttpRequestObject = new XMLHttpRequest();
-        } else if (window.ActiveXObject) {
-                XMLHttpRequestObject = new ActiveXObject("Microsoft.XMLHTTP");
- }
+        } 
     document.getElementById("boton").onclick = sacardatos;
 
 }

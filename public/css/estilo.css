@@ -213,6 +213,7 @@ div.container::before{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
     gap:1.5rem;
+    margin-top: 50px;
 }
 .productos .titulo{
     padding-top: 100px;
@@ -271,6 +272,8 @@ div.container::before{
     width: 80px;
     height: 60px;
 }
+
+
 /*Fin productos.html.twig */
 /*contacto.html,login.html.twig,register.html.twig*/
 
@@ -402,7 +405,7 @@ input[type=text], select, textarea {
     font-size: 20pt;
 }
 
-.video .row .colum img{
+.video .row .column video{
     display: block;
 }
 
@@ -416,14 +419,25 @@ input[type=text], select, textarea {
 }
 
 .premio .premios h3{
+    font-size: 30px;
     text-transform: uppercase;
     color: #d3ad7f;
+    text-align: center;
 }
 
 .premio .premios{
-    float: left;
     color : white;
     margin-top: 300px;
+}
+.premio .premios img{
+    display: block;
+    margin: auto;
+}
+
+.premio .premios p{
+    font-size: 18px;
+    color : white;
+    text-align: center;
 }
 
 .acordeon{
@@ -451,18 +465,24 @@ input[type=text], select, textarea {
     color: orange;
   }
 
-  .ajax .resultado{
-    font-size: 25px;
+  .ajax .resultado h3{
+    font-size: 30px;
     text-transform: uppercase;
     color: #d3ad7f;
-    margin-top: 750px;
+    text-align: center;
 }
 
+  .ajax .resultado img{
+      display: block;
+      margin: auto;
+  }
   .ajax .resultado input{
+    margin-top: 600px;
     display: block;
     border: 2px;
     background-color: #d3ad7f;
     color: white;
+    margin: auto;
 }
  
 /*footer común*/
@@ -474,7 +494,6 @@ input[type=text], select, textarea {
 
 .footer .rrss{
     padding: 1rem 0;
-    margin-top: 200px;
 }
 .footer .rrss a{
     height: 3rem;
