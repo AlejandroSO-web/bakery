@@ -1,6 +1,4 @@
 {% extends "base.html.twig" %}
-
-
 {% block body %}
 <!--Pagina recetas-->
     <section class="recetas" id="recetas">
@@ -81,12 +79,15 @@
   </div>
 </section>
 
-  <section class="ajax">
+  <section class="dialogo">
     <div class="resultado">
      <h3>Nuestras Creaciones</h3>
-        <div id="contenido"> 
-        <img id="mix" src="imagenes/horno.jpg" alt="horno" width="300" height="300">
-        <input type="button" id="boton" class="btn" value="De aqui sale magia">
+        <p>Las panaderías artesanales tendemos a ser más pequeñas y producir menos aunque trabajemos con una mayor variedad de productos. Tenemos un mayor margen para el trabajo creativo, como la confección de glaseados, coberturas y decoraciones para tartas de cumpleaños.</p>
+      <div id="contenido"> 
+        <div id="dialog" title="Basic dialog">
+          <p>¡Ven a probarlo!</p>
+        </div>
+        <button id="opener">AL PAN PAN</button>
         </div>
     </div>
   </section>

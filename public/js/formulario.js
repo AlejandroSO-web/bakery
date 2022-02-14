@@ -1,16 +1,15 @@
 window.onload= function(){
-    document.getElementById("#realizar").onclick = validar;
+    document.getElementById("realizar").onclick = validar;
     document.getElementById("3").onkeypress = soloNumeros;
-    document.getElementById("borrar").onclick = borrar;
     setInterval(muestraReloj,1000); 
 }
 
 function validar(event){
-    var nombre = document.getElementById("1");
-    var apellido = document.getElementById("2");
-    var dni = document.getElementById("4");
-    var telefono = document.getElementById("3");
-    var pedido = document.getElementById("pedidos");
+    let nombre = document.getElementById("1");
+    let apellido = document.getElementById("2");
+    let dni = document.getElementById("4");
+    let telefono = document.getElementById("3");
+    let pedido = document.getElementById("pedidos");
     if(dni.value == ""){
         alert("Hay campos obligatorios vacios");
         event.preventDefault();
@@ -47,7 +46,3 @@ function soloNumeros (event){
     }
     
 }
-
-function borrar(){
-    document.getElementById("form").reset();
-   }

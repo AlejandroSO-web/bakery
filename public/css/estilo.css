@@ -120,6 +120,39 @@ section{
 
 }
 
+.row2{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    background: black;
+    flex-wrap: wrap;
+}
+.row2 .imagen2{
+    margin-top: auto;
+    flex: 300px;
+}
+
+.row2 .imagen2 img{
+    width: 100%;
+    padding-right: 100px;
+}
+
+.row2 .contenido2{
+    flex: 1 1 200px;
+    padding: 5px;
+}
+.row2 .contenido2 h3{
+    font-size: 20px;
+    color: #fff;
+}
+.row2 .contenido2 p{
+    font-size: 20px;
+    color: #ccc;
+    padding:5px 0;
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
 @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {
       width: 100%;
@@ -200,6 +233,18 @@ section{
     background-color: white;
     margin-top: -20px;
     font-size: 20pt;
+}
+
+ .fondo{
+    background-color: red;
+    height: 100px;
+    margin-top: 20px;
+}
+ .fondo p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
 
 /*Fin base.html.twig*/
@@ -386,6 +431,16 @@ input[type=text], select, textarea {
     display: inline-block;
   }
 
+table {
+    width:  100%;
+    border: 2px solid #d3ad7f;
+}
+table, th, td {
+    font-size: 18px;
+    color : white;
+    text-align: center;
+}
+
 /*Recetas.html.twig*/
 
 .recetas .contenido{
@@ -465,24 +520,27 @@ input[type=text], select, textarea {
     color: orange;
   }
 
-  .ajax .resultado h3{
+  .dialogo .resultado p{
+      color: white;
+      font-size: 20px;
+      justify-content: center;
+  }
+  .dialogo .resultado h3{
     font-size: 30px;
     text-transform: uppercase;
     color: #d3ad7f;
     text-align: center;
 }
 
-  .ajax .resultado img{
-      display: block;
-      margin: auto;
-  }
-  .ajax .resultado input{
+  .dialogo .resultado button{
     margin-top: 600px;
     display: block;
-    border: 2px;
     background-color: #d3ad7f;
     color: white;
     margin: auto;
+    width: 100px;
+    height: 50px;
+    border-radius: 2px;
 }
  
 /*footer común*/
