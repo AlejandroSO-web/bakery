@@ -254,6 +254,27 @@ div.container::before{
     content: none;
 }
 
+.productos .menu{
+    background-color: black;
+    width: 250px;
+    border: 2px solid;
+    text-align: center;
+}
+
+.productos .menu h2{
+    color: white;
+    text-align: center;
+}
+
+.productos .menu span{
+    color : #d3ad7f;
+}
+
+.productos .menu a{
+   font-size: 20px;
+   color : white;
+}
+
 .productos .container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
